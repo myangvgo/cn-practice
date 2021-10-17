@@ -1,0 +1,15 @@
+### Client HTTP Header test
+
+GET http://localhost/hello HTTP/1.1
+Content-Type: application/json
+X-Custom-Client-Header: hello
+
+### /healthz
+GET http://localhost/healthz HTTP/1.1
+Content-Type: application/json
+X-Custom-Client-Header: healthz
+
+### /notfound
+GET http://localhost/notfound HTTP/1.1
+Content-Type: application/json
+X-Custom-Client-Header: notfound
